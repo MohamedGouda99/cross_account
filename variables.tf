@@ -18,12 +18,8 @@ variable "transit_gateway_id" {
 
 variable "cidr_block" {
   type    = string
-  default = "172.24.168.128/26"
 }
 
-# variable "subnet_ids" {
-#   type = list(string)
-# }
 
 variable "subnet_details" {
   type = map(object({
