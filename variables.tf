@@ -30,16 +30,6 @@ variable "subnet_details" {
     cidr_block        = string
     availability_zone = string
   }))
-  default = {
-    mve_private_subnet_1 = {
-      cidr_block        = "172.24.168.128/27"
-      availability_zone = "us-east-1a"
-    }
-    mve_private_subnet_2 = {
-      cidr_block        = "172.24.168.160/27"
-      availability_zone = "us-east-1b"
-    }
-  }
 }
 
 variable "transit_gateway_name" {}
