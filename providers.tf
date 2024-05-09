@@ -1,7 +1,7 @@
 provider "aws" {
   alias = "first"
 
-  region  = "us-east-1"
+  region  = var.aws_first_region
   profile = "first_account"
 }
 
@@ -9,7 +9,7 @@ provider "aws" {
 provider "aws" {
   alias = "second"
 
-  region  = "us-east-1"
+  region  = var.aws_second_region
   profile = "second_account"
 }
 
