@@ -1,10 +1,4 @@
 terraform {
-  #   backend "s3" {
-  #     bucket         = "arun-terraform-state-backend-test-363652623632"
-  #     key            = "terraform.tfstate"
-  #     region         = "us-east-1"
-  #     dynamodb_table = "arun-terraform-state-lock"
-  #   }
   required_providers {
     aws = {
       source                = "hashicorp/aws"
